@@ -9,12 +9,26 @@ public class WelcomeToJava {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		someMethod();
+		// someMethod();
+		myAssignmentExample();
 	}
-		
-    // My first method
-	public static void someMethod( )  {  
-        System.out.println("Welcome to Java");
+
+	public static void myAssignmentExample() {
+		AssignmentExample ae = new AssignmentExample();
+		ae.plusEqualsExample();
+		ae.minusEqualsExample();
+		ae.multiplyEqualsExample();
+		ae.divisionEqualsExample();
+		ae.modulusEqualsExample();
+		ae.leftShiftEqualsExample();
+		ae.rightShiftEqualsExample();
+		ae.bitwiseAndEqualsExample();
+		ae.bitwiseOrEqualsExample();
 	}
-	
+
+	// My first method
+	public static void someMethod() {
+		System.out.println("Welcome to Java");
+	}
+
 }
