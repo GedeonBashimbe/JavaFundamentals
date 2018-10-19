@@ -10,7 +10,28 @@ public class WelcomeToJava {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// someMethod();
-		myAssignmentExample();
+		// myAssignmentExample();
+		myDecisionExample();
+		mySongExample();
+	}
+	
+	public static void mySongExample() {
+		SongsExamples se = new SongsExamples();
+		String beer = se.bottlesOfBeer();
+		System.out.println(beer);
+	}
+	
+	public static void myDecisionExample() {
+		DecisionExamples de = new DecisionExamples();
+		de.basicifStatement();
+		de.chainIfStatement();
+		de.switchExample(5);
+		
+		LoopingExamples le = new LoopingExamples();
+		le.myWhileLoop();
+		le.myDoWhileLoop();
+		le.myForLoop();
+		le.myBranchExample();
 	}
 
 	public static void myAssignmentExample() {
