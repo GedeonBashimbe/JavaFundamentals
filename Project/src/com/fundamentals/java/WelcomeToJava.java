@@ -101,23 +101,25 @@ int[][] anArray = new int [3][5];
 	
 	public static void myHouse() {
 		House myHouse = new House();
-		myHouse.doors = "Red Doors";
+		//myHouse.doors = "Red Doors";
+		myHouse.setDoor("Red Doors");
 		
 		House mySecondHome = new House();
-		mySecondHome.doors = "Purple Doors";
+		//mySecondHome.doors = "Purple Doors";
+		mySecondHome.setDoor("Purple Doors");
 		
 		House myThirdHome = myHouse;
 		myHouse = mySecondHome;
 		
 		House[] houseArray = new House[] { myHouse, mySecondHome, myThirdHome};
 		
-		//System.out.println(myHouse.doors); // 5 Red doors, 1 null, ? Purple Doors
-		//System.out.println(mySecondHome.doors); // Purple Doors
-		//System.out.println(myThirdHome.doors); // 2 null, 3 Red Doors, 1 Purple Doors
+		System.out.println(myHouse.getDoors()); // 5 Red doors, 1 null, ? Purple Doors
+		System.out.println(mySecondHome.getDoors()); // Purple Doors
+		System.out.println(myThirdHome.getDoors()); // 2 null, 3 Red Doors, 1 Purple Doors
 		
 		int i = 0;
 		do {
-			System.out.println(houseArray[i].doors);
+			System.out.println(houseArray[i].getDoors());
 			i++;
 		} while(i < houseArray.length);
 	}
