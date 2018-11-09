@@ -5,6 +5,7 @@ public class House {
 	private String windows;
 	private String doors;
 	private boolean hasStairs;
+	protected String value = "My House";
 	
 	public void setWindows(String value) {
 		this.windows = value; 
@@ -31,6 +32,7 @@ public class House {
 	}
 	
 	public void openDoor() {
+		System.out.println("I opened a Steel Door"+value);
 		
 	}
 	
