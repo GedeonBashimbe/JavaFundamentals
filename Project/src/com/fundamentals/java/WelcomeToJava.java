@@ -51,6 +51,21 @@ public class WelcomeToJava {
 		myOtherhouse.openDoor();
 	}
 	
+	public static void myAbstractExample() {
+		// Can't created an instance of an Abstract class
+		//Shape shape = new Shape(); // Not Valid
+		System.out.println( Shape.area(5, 10));
+		Square square =  new square();
+		System.out.println( square.draw());
+		Rectangle rec = new Rectangle();
+		System.out.println(rec.draw());
+		rec.setLength(10);
+		rec.setWidth(5);
+		System.out.println(Shape.area(rec.getLength(), rec.getWidth());
+		
+		MyOctagon mo = new MyOctagon();
+	}
+	
 	public static void overloadExample() {
 		Apple myApple = new Apple();
 		myApple.display("Granny Smiths", 5);
